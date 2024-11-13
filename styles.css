@@ -18,6 +18,15 @@
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+      
+  .col {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+  
+  .col img {
+    width: 100%;
   }
